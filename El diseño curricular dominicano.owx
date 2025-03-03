@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yennyrosario/ontologies/2025/2/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/yennyrosario/ontologies/2025/2/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/yennyrosario/ontologies/2025/2/untitled-ontology-6/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Actores_Educativos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alfabetizaciòn_imprescindible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ciencias_Sociales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ciencias_de_la_Naturaleza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ciudadania_y_Convivencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competencias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competencias_Especificas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competencias_Fundamentales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Componentes_Curriculares"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contenidos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desarrollo_Personal_y_Profesional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desarrollo_Sostenible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diseño_Curricular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Docentes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Educaciòn_Artìstica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Educaciòn_Fisica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ejes_Transversales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Estudiantes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaluaciòn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Filosofia_Educatica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formaciòn_Humana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fundamentos_Curriculares"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lengua_Española"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marco_Legal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Matematica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Padres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salud_y_Bienestar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Àreas_Curriculares"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Desarrolla"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Evaluado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Fundamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DesarrollaCometencias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EsEvaluado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TieneFundamento"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Docentes"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Desarrolla"/>
+            <Class IRI="#Docentes"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fundamentos_Curriculares"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Evaluado"/>
+            <Class IRI="#Estudiantes"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Àreas_Curriculares"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Desarrolla"/>
+            <Class IRI="#Docentes"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Alfabetizaciòn_imprescindible"/>
+        <Class IRI="#Ejes_Transversales"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciencias_Sociales"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciencias_de_la_Naturaleza"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciudadania_y_Convivencia"/>
+        <Class IRI="#Ejes_Transversales"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Competencias"/>
+        <Class IRI="#Componentes_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Competencias_Especificas"/>
+        <Class IRI="#Competencias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Competencias_Fundamentales"/>
+        <Class IRI="#Competencias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contenidos"/>
+        <Class IRI="#Componentes_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desarrollo_Personal_y_Profesional"/>
+        <Class IRI="#Ejes_Transversales"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desarrollo_Sostenible"/>
+        <Class IRI="#Ejes_Transversales"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Docentes"/>
+        <Class IRI="#Actores_Educativos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Educaciòn_Artìstica"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Educaciòn_Fisica"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Estudiantes"/>
+        <Class IRI="#Actores_Educativos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaluaciòn"/>
+        <Class IRI="#Componentes_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Filosofia_Educatica"/>
+        <Class IRI="#Fundamentos_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formaciòn_Humana"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingles"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lengua_Española"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marco_Legal"/>
+        <Class IRI="#Fundamentos_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Matematica"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Padres"/>
+        <Class IRI="#Actores_Educativos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salud_y_Bienestar"/>
+        <Class IRI="#Ejes_Transversales"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Desarrolla"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Evaluado"/>
+        <ObjectProperty IRI="#Desarrolla"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="#Desarrolla"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Desarrolla"/>
+        <Class IRI="#Docentes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Evaluado"/>
+        <Class IRI="#Estudiantes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Fundamento"/>
+        <Class IRI="#Diseño_Curricular"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Docentes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Desarrolla"/>
+        <Class IRI="#Componentes_Curriculares"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Desarrolla"/>
+        <Class IRI="#Ejes_Transversales"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Desarrolla"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Evaluado"/>
+        <Class IRI="#Evaluaciòn"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Evaluado"/>
+        <Class IRI="#Àreas_Curriculares"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Fundamento"/>
+        <Class IRI="#Fundamentos_Curriculares"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Competencias"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DesarrollaCometencias"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EsEvaluado"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TieneFundamento"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DesarrollaCometencias"/>
+        <Class IRI="#Competencias"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DesarrollaCometencias"/>
+        <Class IRI="#Docentes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EsEvaluado"/>
+        <Class IRI="#Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EsEvaluado"/>
+        <Class IRI="#Evaluaciòn"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TieneFundamento"/>
+        <Class IRI="#Diseño_Curricular"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TieneFundamento"/>
+        <Class IRI="#Fundamentos_Curriculares"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
